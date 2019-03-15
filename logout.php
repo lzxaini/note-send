@@ -1,0 +1,10 @@
+<?php
+/*
+*退出系统的功能
+*/
+include("conn.php");
+session_start();
+$SESSION=[];
+session_destroy();
+alert("退出成功！","login.php");
+?>
