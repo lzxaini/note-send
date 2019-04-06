@@ -1,7 +1,7 @@
 body,html{
 	margin: 0;
 	padding: 0;
-	background-color: pink;
+	background-color: #666;
 	font-size: 19px;
 }
 .top-header{
@@ -50,23 +50,10 @@ body,html{
 	font-family: 新宋体,微软雅黑;
 	color: #fff;
 }
-.breadcrumb{
-	width: 850px;
-	background-color: #a6e2ff80;
-	margin-top: 120px;
-}
-.main-body{
-	background-color: #fff;
-	margin-top: 160px;
-	box-shadow: 2px 2px 3px #ccc;
-	width: 100%;
-	height: 400;
-	background-size: 100%;
-}
 #footer{
 	background-color: #666;
 	color:#eee;
-	border-top: 1px solid #ccc;
+/*	border-top: 1px solid #ccc;*/
 	padding: 20px;
 	text-align: center;
 }
@@ -74,6 +61,59 @@ body,html{
 	font-family: 新宋体,微软雅黑;
 	color: white;
 }
+.panel-body>form>article>.text-area{
+	overflow: hidden;
+	display: inline;
+	margin: 0 auto;
+/*	margin-left: 150px;*/
+}
+.panel-body{
+	height: 550px;
+}
+.panel-body>form>article>.btn{
+	margin: 10px 0 0 100px;
+}
+
+/*小屏幕显示器*/
+@media(min-width: 768px){
+.text-area{
+	height: 160px;
+	width: 200px;
+}
+}
+/*中等屏幕显示器*/
+@media(min-width: 992px){
+.text-area{
+	height: 170px;
+	width: 300px;
+	resize: none;
+}
+}
+
+/*大屏幕显示器*/
+@media(min-width: 1200px){
+article{
+	width: 500px;
+	height: 400px;
+	margin-left: 150px;
+	display: inline-block;
+	vertical-align:middle;
+}
+aside{
+	/*background-color: red;*/
+	width: 300px;
+	height: 400px;
+	margin-left: 30px;
+	display: inline-block;
+	vertical-align:middle;
+}
+.text-area{
+	height: 170px;
+	width: 500px;
+	resize: none;
+}
+}
+
 /*.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #fff;
     background-color: #ccc;

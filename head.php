@@ -39,26 +39,21 @@ include("conn.php");
 		<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse" >
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="note-send.php" class="dropdown-toggle" data-toggle="dropdown">
-					短信任务<b class="caret"></b>
+					<a href="note-send.php" class="dropdown-toggle">
+					短信任务
 					</a>
-						<ul class="dropdown-menu">
-							<li><a href="note-send.php">创建短信任务</a></li>
-							<li><a href="#">批量发送短信</a></li>
-							<li><a href="#">定时发送短信</a></li>
-						</ul>
 				</li>
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-					彩信任务<b class="caret"></b>
+				<li><a href="#" class="dropdown-toggle">
+					彩信任务<!-- <b class="caret"></b>  data-toggle="dropdown"-->
 					</a>
-						<ul class="dropdown-menu">
+<!-- 						<ul class="dropdown-menu">
 							<li><a href="123.html">创建彩信任务</a></li>
 							<li><a href="#">批量发送彩信</a></li>
 							<li><a href="#">定时发送彩信</a></li>
-						</ul>
+						</ul> -->
 				</li>
 				<li class="dropdown">
-					<a href="#">余额查询</a>
+					<a href="balance.php">余额查询</a>
 				</li>
 				<li><a href="mailto:1245634367@qq.com">投诉建议 <span class="glyphicon glyphicon-envelope"></span></a></li>
 				<li><a href="logout.php">退出系统 <span class="glyphicon glyphicon-off"></span></a></li>
@@ -70,7 +65,7 @@ include("conn.php");
 		</div>
 		</div>
 	</nav>
-	<ul class="breadcrumb navbar-fixed-top hidden-xs hidden-sm">
+<!-- 	<ul class="breadcrumb navbar-fixed-top hidden-xs hidden-sm">
 		您当前所在位置：
 		<li><a href="index.php">首页</a></li>
-	</ul>
+	</ul> -->

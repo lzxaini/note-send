@@ -38,10 +38,10 @@ include("conn.php");
 		</div>
 		<div class="collapse navbar-collapse navbar-right" id="example-navbar-collapse" >
 			<ul class="nav navbar-nav">
-				<li><a href="#">创建短信任务</a></li>
+				<li><a href="单条短信测试">创建短信任务</a></li>
 				<li><a href="Batch-send.php">批量发送短信</a></li>
 				<!-- <li><a href="##">定时发送短信</a></li> -->
-				<li><a href="balance.php">余额查询</a></li>
+				<li><a href="#">余额查询</a></li>
 				<li><a href="mailto:1245634367@qq.com">投诉建议 <span class="glyphicon glyphicon-envelope"></span></a></li>
 				<li><a href="logout.php">退出系统 <span class="glyphicon glyphicon-off"></span></a></li>
 			</ul>
@@ -54,23 +54,23 @@ include("conn.php");
 			您当前所在位置：
 				<a href="index.php">首页> </a>
 				<a href="note-send.php">短信任务> </a>
-				创建短信任务
+				余额查询
 			</h3>
 		</div>
 		<div class="panel-body" class="form-group">
-			<form action="note-send-dispost.php" method="post">
+			<form action="balance-dispost.php" method="post">
 				<article>
 					<textarea  class="form-control text-area" name="user_content" id="phone-user" cols="30" rows="10" placeholder="请输入要发送的内容"></textarea><br/>
 					<textarea  class="form-control text-area" name="mobile" cols="30" rows="10" placeholder="输入正确的手机号,多个手机号请用逗号隔开！"></textarea><br/>
 					<input class="btn btn-primary" type="submit" value="短信发送测试">
 					<input class="btn btn-warning" type="reset" value="清空所有内容">	
 				</article>
-				<aside class="hidden-xs hidden-sm">
+<!-- 				<aside class="hidden-xs hidden-sm">
 					定时发送：<input type="date"><br/>
 					信息模板：<br/>
 					发送记录：<br/>
 					失败记录：<br/>
-				</aside>
+				</aside> -->
 			</form>	
 		</div>
 	</div>
