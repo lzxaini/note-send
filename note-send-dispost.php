@@ -24,7 +24,7 @@ function curl_post($text){
     curl_close($ch);
     return $output;
 }
-//获取当天天气预报情况
+//此处原来用于天气API获取当天，天气预报情况
 function message(){
 	$number = $_POST["user_content"];
     $city = 1;
