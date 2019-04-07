@@ -4,7 +4,7 @@
 --
 -- Host: 8pxfgkz2.2334.dnstoo.com:5512
 -- Generation Time: 2019-02-03 11:42:14
--- ·şÎñÆ÷°æ±¾£º 5.5.35.t15-log
+-- æœåŠ¡å™¨ç‰ˆæœ¬ï¼š 5.5.35.t15-log
 -- PHP Version: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- ±íµÄ½á¹¹ `admin`
+-- è¡¨çš„ç»“æ„ `admin`
 --
 
 CREATE TABLE `admin` (
@@ -33,12 +33,11 @@ CREATE TABLE `admin` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- ×ª´æ±íÖĞµÄÊı¾İ `admin`
+-- è½¬å­˜è¡¨ä¸­çš„æ•°æ® `admin`
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(1, 'ÀîÖ¾Ïé', '19982019'),
-(2, 'test', '19982019');
+(1, 'admin', '1998000');
 
 --
 -- Indexes for dumped tables
@@ -51,11 +50,11 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- ÔÚµ¼³öµÄ±íÊ¹ÓÃAUTO_INCREMENT
+-- åœ¨å¯¼å‡ºçš„è¡¨ä½¿ç”¨AUTO_INCREMENT
 --
 
 --
--- Ê¹ÓÃ±íAUTO_INCREMENT `admin`
+-- ä½¿ç”¨è¡¨AUTO_INCREMENT `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
