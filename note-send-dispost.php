@@ -14,7 +14,7 @@ echo "<script>
 function curl_post($text){
 	$mobile = $_POST["mobile"];
     $url = "http://120.26.38.54:8000/interface/smssend.aspx";
-    $post_data = array ("account" => "caiwm","password" => "123qwe","mobile"=>$mobile,"content"=>$text);
+    $  post_data   =   array（“account”   =>   “你的账号”，“password”   =>   “”你的密码，“mobile”  =>  $  mobile，“content”  =>  $  text） ;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
